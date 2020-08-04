@@ -1,5 +1,6 @@
 resource "aws_default_security_group" "web_server" {
   vpc_id = aws_vpc.main.id
+  
   ingress {
     from_port   = 443
     to_port     = 443
